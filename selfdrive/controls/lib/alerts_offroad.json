@@ -1,0 +1,52 @@
+{
+  "Offroad_ChargeDisabled": {
+    "text": "إذا تم إيقاف تشغيل السيارة لأكثر من يوم ، فلا يمكن شحن الجهاز. قم بتشغيل الإشعال لبدء الشحن.",
+    "severity": 0
+  },
+  "Offroad_TemperatureTooHigh": {
+    "text": "درجة حرارة الجهاز مرتفعة جدًا لبدء تشغيل النظام.",
+    "severity": 1
+  },
+  "Offroad_ConnectivityNeededPrompt": {
+    "text": "اتصل بالشبكة للتحقق من وجود تحديثات. خلاف ذلك ، لن يتم تنشيط الأوبن.",
+    "severity": 0,
+    "_comment": "Append the number of days at the end of the text"
+  },
+  "Offroad_ConnectivityNeeded": {
+    "text": "اتصل بالشبكة للتحقق من وجود تحديثات. خلاف ذلك ، لن يتم تنشيط الأوبن.",
+    "severity": 1
+  },
+  "Offroad_UpdateFailed": {
+    "text": "تعذر تنزيل التحديث \n",
+    "severity": 1,
+    "_comment": "Append the command and error to the text."
+  },
+  "Offroad_PandaFirmwareMismatch": {
+    "text": "إصدار البرامج الثابتة الباندا غير متوافق. أعد تشغيل جهازك وستتم إعادة تثبيت البرامج الثابتة للباندا.",
+    "severity": 1
+  },
+  "Offroad_InvalidTime": {
+    "text": "لن يبدأ النظام بإعدادات التاريخ والوقت غير الصحيحة. اتصل بالشبكة واضبط التاريخ والوقت.",
+    "severity": 1
+  },
+  "Offroad_IsTakingSnapshot": {
+    "text": "لن يبدأ النظام لأن التقاط لقطة الكاميرا لم يكتمل.",
+    "severity": 0
+  },
+  "Offroad_NeosUpdate": {
+    "text": "يجري تنزيل تحديثات نظام التشغيل NEOS في الخلفية. سيُطلب منك التحديث عندما تكون جاهزًا للتثبيت.",
+    "severity": 0
+  },
+  "Offroad_HardwareUnsupported": {
+    "text": "الباندا البيضاء والرمادية لم تعد متوافقة. استخدم الباندا السوداء أو كوما إثنين.",
+    "severity": 0
+  },
+  "Offroad_UnofficialHardware": {
+    "text": "فشل تسجيل الجهاز. نحن لا نتصل بخوادم comma.ai ولا نحملها ولا ندعمها comma.ai. إذا كان هذا جهازًا رسميًا ، فيرجى الاتصال بنا على support@comma.ai",
+    "severity": 1
+  },
+  "Offroad_NvmeMissing": {
+    "text": "ذاكرة NVME غير مركبة.",
+    "severity": 1
+  }
+}
