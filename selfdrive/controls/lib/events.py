@@ -295,7 +295,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, Callable[[Any, messaging.SubMaster, boo
     ET.PERMANENT: Alert(
       #"WARNING: This branch is not tested",
       #"Always keep hands on wheel and eyes on road",
-      "تحذير: لم يتم اختبار هذا الفرع",
+      "الرجاء ربط حزام الأمان وإبقاء عينك على الطريق",
       "امسك عجلة القيادة دائمًا وراقب الطريق",
       AlertStatus.normal, AlertSize.mid,
       Priority.LOWER, VisualAlert.none, AudibleAlert.chimeReady, 1., 0., 10.),
