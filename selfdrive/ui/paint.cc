@@ -221,7 +221,7 @@ static void ui_draw_vision_speed(UIState *s) {
   const std::string speed_str = std::to_string((int)std::nearbyint(speed));
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_BASELINE);
   ui_draw_text(s, s->fb_w/2, 240, speed_str.c_str(), 100 * 2.5, COLOR_WHITE, "sans-bold");
-  ui_draw_text(s, s->fb_w/2, 320, s->scene.is_metric ? "㎞/h" : "mph", 36 * 2.5, COLOR_YELLOW_ALPHA(200), "sans-regular");
+  ui_draw_text(s, s->fb_w/2, 320, s->scene.is_metric ? "كلم/س" : "ميل", 36 * 2.5, COLOR_YELLOW_ALPHA(200), "sans-regular");
 
   // turning blinker sequential crwusiz / mod by arne-fork Togo
   const int blinker_w = 250;
@@ -347,7 +347,7 @@ static void ui_draw_autohold(UIState *s) {
   const int radius = 85;
   const int autohold_x = (radius*2) + (bdr_s*2) + (radius*3);
   const int autohold_y = s->fb_h - (footer_h/2) + 20;
-  ui_draw_circle_image(s, autohold_x, autohold_y, radius, autohold > 1 ? "autohold_warning" : "autohold_active", s->scene.car_state.getAutoHold());
+  ui_draw_circle_image(s, autohold_x, autohold_y, radius, autohold > 1 ? "تحذير  التوقف التلقائي" : "تم تفعيل التوقف التلقائي", s->scene.car_state.getAutoHold());
 }
 
 static void ui_draw_bsd_left(UIState *s) {
@@ -401,7 +401,7 @@ static void ui_draw_tpms(UIState *s) {
     int y = 850;
     int w = 66;
     int h = 146;
-    ui_draw_image(s, {x, y, w, h}, "tire_pressure", 0.8f);
+    ui_draw_image(s, {x, y, w, h}, "ضغط_الإطارات", 0.8f);
 
     nvgFontSize(s->vg, 50);
     nvgFontFace(s->vg, "sans-semibold");
@@ -516,7 +516,7 @@ static void ui_draw_measures_right(UIState *s, int x, int y, int w) {
 
   //add visual radar relative distance
   if (is_enabled) {
-    auto radar_state = (*s->sm)["radarState"].getRadarState();
+    auto radar_state = (*s->sm)["حالة الرادار"].getRadarState();
     auto lead_one = radar_state.getLeadOne();
     char val_str[16];
     char val_add[4] = "ｍ";
